@@ -7,6 +7,7 @@ import com.kodekutters.core.{GattUtils, HeartRateMeasurement, SensorWorn}
 object HeartRateMeasurementTest {
 
   def main(args: Array[String]) {
+    implicit val byteOrder = java.nio.ByteOrder.LITTLE_ENDIAN
 
     val testValue = ByteString(GattUtils.hexStringToByteArray("16485401EC02"))
     val hrm = new HeartRateMeasurement(testValue)

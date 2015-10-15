@@ -2,8 +2,9 @@ package com.kodekutters.core
 
 import akka.util.ByteString
 
-
 case class BatteryLevel(value: ByteString) {
+
+  implicit val byteOrder = java.nio.ByteOrder.LITTLE_ENDIAN
 
   /**
    * @return The current charge level of a battery in %. 100% represents fully
