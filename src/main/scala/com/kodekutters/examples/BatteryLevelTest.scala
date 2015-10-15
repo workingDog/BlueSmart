@@ -1,6 +1,7 @@
-package com.kodekutters.core
+package com.kodekutters.examples
 
 import akka.util.ByteString
+import com.kodekutters.core.BatteryLevel
 
 
 object BatteryLevelTest {

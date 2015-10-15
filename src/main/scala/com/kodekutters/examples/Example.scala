@@ -1,8 +1,9 @@
-package com.kodekutters.core
+package com.kodekutters.examples
 
 import java.util.UUID
 
 import akka.util.ByteString
+import com.kodekutters.core.{Characteristic, HeartRateMeasurement, Service}
 
 object Example {
 
