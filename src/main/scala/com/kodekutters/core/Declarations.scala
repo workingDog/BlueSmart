@@ -10,10 +10,12 @@ import io.jvm.uuid._
  */
 object Declarations {
 
-  val GATT_CHARACTERISTIC_DECLARATION = UUID((0x2803L << 32) | 0x1000, GattUtils.leastSigBits)
-  val GATT_INCLUDE_DECLARATION = UUID((0x2802L << 32) | 0x1000, GattUtils.leastSigBits)
-  val GATT_PRIMARY_SERVICE_DECLARATION = UUID((0x2800L << 32) | 0x1000, GattUtils.leastSigBits)
-  val GATT_SECONDARY_SERVICE_DECLARATION = UUID((0x2801L << 32) | 0x1000, GattUtils.leastSigBits)
+  import GattUtils._
+
+  val GATT_CHARACTERISTIC_DECLARATION = UUID((0x2803L << 32) | 0x1000, leastSigBits)
+  val GATT_INCLUDE_DECLARATION = UUID((0x2802L << 32) | 0x1000, leastSigBits)
+  val GATT_PRIMARY_SERVICE_DECLARATION = UUID((0x2800L << 32) | 0x1000, leastSigBits)
+  val GATT_SECONDARY_SERVICE_DECLARATION = UUID((0x2801L << 32) | 0x1000, leastSigBits)
 
   val attributes = HashMap[UUID, String](
     GATT_CHARACTERISTIC_DECLARATION -> "GATT Characteristic Declaration",
