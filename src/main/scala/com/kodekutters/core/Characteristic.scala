@@ -5,7 +5,7 @@ import io.jvm.uuid._
 
 /**
   * Characteristics are defined attribute types that contain a single logical value.
-  * Only adopted characteristics
+  * Only adopted characteristics are listed
   *
   * ref: https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx
  */

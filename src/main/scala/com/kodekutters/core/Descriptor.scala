@@ -5,7 +5,7 @@ import io.jvm.uuid._
 
 
 /**
-  *Descriptors are defined attributes that describe a characteristic value.
+  * Descriptors are defined attributes that describe a characteristic value.
   *
   * ref: https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx
  */
