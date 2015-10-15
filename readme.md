@@ -5,8 +5,7 @@ See also [Wikipedia Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetoot
 
 This library provides all UUIDs of the adopted [GATT specification](https://developer.bluetooth.org/gatt/Pages/default.aspx).
 
-BlueSmart is a conversion of the java library [SmartGattLib](https://github.com/movisens/SmartGattLib).
-BlueSmart has a more updated set of UUIDs. 
+BlueSmart is a conversion of the java library [SmartGattLib](https://github.com/movisens/SmartGattLib), however BlueSmart has a more updated set of UUIDs. 
 
 Since BlueSmart is in Scala it can be used with [Scala.js](http://www.scala-js.org/), hence compiles to JavaScript for browser use.
 
