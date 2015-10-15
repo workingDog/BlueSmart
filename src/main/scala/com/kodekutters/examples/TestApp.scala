@@ -8,7 +8,7 @@ import com.kodekutters.core._
 object TestApp {
 
   def main(args: Array[String]) {
-  //  test1()
+    test1()
     test2()
   }
 
