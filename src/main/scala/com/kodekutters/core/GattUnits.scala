@@ -4,7 +4,7 @@ import com.kodekutters.protocol.GattUnit
 
 import scala.collection.immutable.HashMap
 
-//  not to be used yet
+//  not to be used yet  ------ todo
 /**
   * Units are established international standards for the measurement of physical quantities.
   *

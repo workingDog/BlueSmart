@@ -189,7 +189,9 @@ object Characteristic {
   val WEIGHT_SCALE_FEATURE = UUID((0x2A9EL << 32) | 0x1000, leastSigBits)
   val WIND_CHILL = UUID((0x2A79L << 32) | 0x1000, leastSigBits)
 
-  // ----------
+  // ------------------------------------------------------------
+  // ------------------------------------------------------------
+  // ------------------------------------------------------------
 
   val AGGREGATE_INPUT = UUID((0x2A5AL << 32) | 0x1000, leastSigBits)
   val ANALOG_INPUT = UUID((0x2A58L << 32) | 0x1000, leastSigBits)
@@ -390,7 +392,10 @@ object Characteristic {
     WEIGHT_SCALE_FEATURE -> "Weight Scale Feature",
     WIND_CHILL -> "Wind Chill",
 
-    // --------
+    // ------------------------------------------------------------
+    // ------------------------------------------------------------
+    // ------------------------------------------------------------
+
     AGGREGATE_INPUT -> "Aggregate Input",
     ANALOG_INPUT -> "Analog Input",
     ANALOG_OUTPUT -> "Analog Output",

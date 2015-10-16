@@ -2,8 +2,10 @@ package com.kodekutters.protocol
 
 import java.util.UUID
 
+//  implicit val byteOrder = java.nio.ByteOrder.LITTLE_ENDIAN
+
 /**
- *
+ * todo
  */
 
 case class Field(name: String, unit: String, format: String, `type`: String, requirement: String, reference: String,
