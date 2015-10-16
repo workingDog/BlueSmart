@@ -21,9 +21,6 @@ See the Example.scala, the TestApp.scala and the references.
 
 ## Dependencies
 
-Uses Scala 2.11.7 and [scala-uuid](https://github.com/melezov/scala-uuid)
-
-## Status 
-
+Uses Scala 2.11.7 and [scala-uuid](https://github.com/melezov/scala-uuid) "A Scala wrapper for java.util.UUID"
 
 
