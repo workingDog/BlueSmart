@@ -1,7 +1,7 @@
 package com.kodekutters.core
 
 import scala.collection.immutable.HashMap
-import io.jvm.uuid._
+import java.util.UUID
 
 
 /**
@@ -13,22 +13,22 @@ object Descriptor {
 
   import GattUtils._
 
-  val CHARACTERISTIC_EXTENDED_PROPERTIES = UUID((0x2900L << 32) | 0x1000, leastSigBits)
-  val CHARACTERISTIC_USER_DESCRIPTION = UUID((0x2901L << 32) | 0x1000, leastSigBits)
-  val CLIENT_CHARACTERISTIC_CONFIGURATION = UUID((0x2902L << 32) | 0x1000, leastSigBits)
-  val SERVER_CHARACTERISTIC_CONFIGURATION = UUID((0x2903L << 32) | 0x1000, leastSigBits)
-  val CHARACTERISTIC_PRESENTATION_FORMAT = UUID((0x2904L << 32) | 0x1000, leastSigBits)
-  val CHARACTERISTIC_AGGREGATE_FORMAT = UUID((0x2905L << 32) | 0x1000, leastSigBits)
-  val VALID_RANGE = UUID((0x2906L << 32) | 0x1000, leastSigBits)
-  val EXTERNAL_REPORT_REFERENCE = UUID((0x2907L << 32) | 0x1000, leastSigBits)
-  val REPORT_REFERENCE = UUID((0x2908L << 32) | 0x1000, leastSigBits)
-  val NUMBER_OF_DIGITALS = UUID((0x2909L << 32) | 0x1000, leastSigBits)
-  val VALUE_TRIGGER_SETTING = UUID((0x290AL << 32) | 0x1000, leastSigBits)
-  val ENVIRONMENTAL_SENSING_CONFIGURATION = UUID((0x290BL << 32) | 0x1000, leastSigBits)
-  val ENVIRONMENTAL_SENSING_MEASUREMENT = UUID((0x290CL << 32) | 0x1000, leastSigBits)
-  val ENVIRONMENTAL_SENSING_TRIGGER_SETTING = UUID((0x290DL << 32) | 0x1000, leastSigBits)
-  val TIME_TRIGGER_SETTING = UUID((0x290EL << 32) | 0x1000, leastSigBits)
-  val TEST_COMPLEX_BITFIELD = UUID((0L << 32) | 0x1000, leastSigBits)
+  val CHARACTERISTIC_EXTENDED_PROPERTIES = new UUID((0x2900L << 32) | 0x1000, leastSigBits)
+  val CHARACTERISTIC_USER_DESCRIPTION = new UUID((0x2901L << 32) | 0x1000, leastSigBits)
+  val CLIENT_CHARACTERISTIC_CONFIGURATION = new UUID((0x2902L << 32) | 0x1000, leastSigBits)
+  val SERVER_CHARACTERISTIC_CONFIGURATION = new UUID((0x2903L << 32) | 0x1000, leastSigBits)
+  val CHARACTERISTIC_PRESENTATION_FORMAT = new UUID((0x2904L << 32) | 0x1000, leastSigBits)
+  val CHARACTERISTIC_AGGREGATE_FORMAT = new UUID((0x2905L << 32) | 0x1000, leastSigBits)
+  val VALID_RANGE = new UUID((0x2906L << 32) | 0x1000, leastSigBits)
+  val EXTERNAL_REPORT_REFERENCE = new UUID((0x2907L << 32) | 0x1000, leastSigBits)
+  val REPORT_REFERENCE = new UUID((0x2908L << 32) | 0x1000, leastSigBits)
+  val NUMBER_OF_DIGITALS = new UUID((0x2909L << 32) | 0x1000, leastSigBits)
+  val VALUE_TRIGGER_SETTING = new UUID((0x290AL << 32) | 0x1000, leastSigBits)
+  val ENVIRONMENTAL_SENSING_CONFIGURATION = new UUID((0x290BL << 32) | 0x1000, leastSigBits)
+  val ENVIRONMENTAL_SENSING_MEASUREMENT = new UUID((0x290CL << 32) | 0x1000, leastSigBits)
+  val ENVIRONMENTAL_SENSING_TRIGGER_SETTING = new UUID((0x290DL << 32) | 0x1000, leastSigBits)
+  val TIME_TRIGGER_SETTING = new UUID((0x290EL << 32) | 0x1000, leastSigBits)
+  val TEST_COMPLEX_BITFIELD = new UUID((0L << 32) | 0x1000, leastSigBits)
 
   val attributes = HashMap[UUID, String](
     CHARACTERISTIC_EXTENDED_PROPERTIES -> "Characteristic Extended Properties",

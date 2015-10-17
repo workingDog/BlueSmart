@@ -5,6 +5,7 @@ import com.kodekutters.core._
 
 /**
   * test app
+  * import scala.scalajs.js.JSApp
  */
 object TestApp {
 

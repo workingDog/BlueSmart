@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <option name="featureWarnings" value="true" />
-    <profile name="SBT 1" modules="bluetooth" />
+    <profile name="SBT 1" modules="bluetooth">
+      <plugins>
+        <plugin path="$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.7/jars/scalajs-compiler_2.11.7-0.6.5.jar" />
+      </plugins>
+    </profile>
   </component>
 </project>

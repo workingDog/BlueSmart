@@ -4,7 +4,7 @@ import java.nio.ByteOrder
 
 import akka.util.ByteString
 
-import io.jvm.uuid._
+import java.util.UUID
 
 /**
   * support utilities
@@ -33,7 +33,7 @@ object GattUtils {
 
   def toUuid(uuidString: String) = UUID.fromString(uuidString)
 
-  def toUuid(assignedNumber: Long) = UUID((assignedNumber << 32) | 0x1000, leastSigBits)
+  def toUuid(assignedNumber: Long) = new UUID((assignedNumber << 32) | 0x1000, leastSigBits)
 
   def toUuid128(assignedNumber: Long) = toUuid(assignedNumber).toString
 
