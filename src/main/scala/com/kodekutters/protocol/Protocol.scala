@@ -2,11 +2,9 @@ package com.kodekutters.protocol
 
 import java.util.UUID
 
-//  implicit val byteOrder = java.nio.ByteOrder.LITTLE_ENDIAN
-
 /**
- * todo
- */
+  * todo
+  */
 
 case class Field(name: String, unit: String, format: String, `type`: String, requirement: String, reference: String,
                  minimum: Long, maximum: Long, enumerations: List[Enumerations],
@@ -26,8 +24,8 @@ case class ServiceCharacteristic(name: String, `type`: String, descriptors: List
 
 case class Descriptor(name: String, `type`: String, uuid: UUID) {}
 
-case class Device(name: String, `type`: String, uuid: UUID) {}  // todo
+case class Device(name: String, `type`: String, uuid: UUID) {}
 
-case class GattUnit(symbol: String, fullName: String){
+case class GattUnit(symbol: String, fullName: String) {
   override def toString() = symbol + " " + fullName
 }

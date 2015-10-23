@@ -7,9 +7,16 @@ import akka.util.ByteString
 import java.util.UUID
 
 /**
-  * support utilities
+  * implicit trait for the ByteOrder
  */
-object GattUtils {
+trait ByteOrderImplicit {
+  implicit val byteOrder = ByteOrder.LITTLE_ENDIAN
+}
+
+/**
+  * supporting utilities
+  */
+object GattUtils extends ByteOrderImplicit {
 
   val leastSigBits = 0x800000805f9b34fbL
 
@@ -64,7 +71,10 @@ object GattUtils {
 
   def asUint8(value: Short) = if (value < 0) (value + (1.toShort << 16)).toShort else value.toShort
 
-  def asByteBuffer(value: ByteString) = value.toByteBuffer.order(ByteOrder.LITTLE_ENDIAN)
+  /**
+    * given an input ByteString return a ByteBuffer with the implicit ByteOrder
+    */
+  def asByteBuffer(value: ByteString)(implicit byteOrder: ByteOrder) = value.toByteBuffer.order(byteOrder)
 
   /**
    * Convert string to a byte array.

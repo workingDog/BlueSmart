@@ -17,8 +17,9 @@ object Location {
 case class BodySensorLocation(value: ByteString) {
 
    import Location._
+   import GattUtils._
 
-  val bodySensorLocation = GattUtils.asByteBuffer(value).get() match {
+  val bodySensorLocation = asByteBuffer(value).get() match {
      case 0 => Other
      case 1 => Chest
      case 2 => Wrist

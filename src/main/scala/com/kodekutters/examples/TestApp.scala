@@ -4,18 +4,12 @@ import com.kodekutters.core._
 
 
 /**
-  * test app
+  * test app ... todo
  */
 object TestApp {
 
   def main(args: Array[String]) {
     test1()
-    test2()
-  }
-
-  def test2(): Unit = {
-    println("GattUnits")
-    GattUnits.attributes.foreach(x => println("key: " + x._1 + " value: " + x._2))
   }
 
   def test1(): Unit = {
@@ -27,6 +21,8 @@ object TestApp {
     Descriptor.attributes.foreach(x => println("key: " + x._1 + " value: " + x._2))
     println("Characteristic")
     Characteristic.attributes.foreach(x => println("key: " + x._1 + " value: " + x._2))
+    println("GattUnits")
+    GattUnits.attributes.foreach(x => println("key: " + x._1 + " value: " + x._2))
   }
 
 }
